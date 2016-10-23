@@ -21,7 +21,7 @@ object PersonalityAssociation {
     .option("header", "true") // Use first line of all files as header
 	.option("delimiter", ";")
     .option("inferSchema", "true") // Automatically infer data types
-    .load("P:/esprit/5TWIN/PI/Datasets/US_persons.csv")
+    .load("D:/Formation/(esprit)5TWIN/PI/docs/US_persons.csv")
     
     val dfLAUSers = df.select("first_name","state").filter(df("state") === "LA")
     
